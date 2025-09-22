@@ -1,0 +1,13 @@
+[package]
+name = "wle-gui"
+version.workspace = true
+edition.workspace = true
+description = "GUI for Wobbly Life save editing"
+
+[dependencies]
+eframe = { version = "0.28" }
+egui = { version = "0.28" }
+rfd = "0.14"
+wle-core = { path = "../wle-core" }
+serde_json = "1"
+chrono = { version = "0.4", features = ["serde"] }

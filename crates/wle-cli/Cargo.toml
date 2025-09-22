@@ -1,0 +1,10 @@
+[package]
+name = "wle-cli"
+version.workspace = true
+edition.workspace = true
+description = "CLI for dumping Wobbly Life save data as JSON"
+
+[dependencies]
+clap = { version = "4", features = ["derive"] }
+wle-core = { path = "../wle-core" }
+serde_json = "1"

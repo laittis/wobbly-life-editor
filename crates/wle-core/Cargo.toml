@@ -1,0 +1,15 @@
+[package]
+name = "wle-core"
+version.workspace = true
+edition.workspace = true
+description = "Core data/model and editing logic for Wobbly Life saves"
+
+[dependencies]
+chrono = { version = "0.4", default-features = false, features = ["clock"] }
+walkdir = "2"
+zip = { version = "0.6", default-features = false, features = ["deflate"] }
+serde_json = "1"
+
+
+[dev-dependencies]
+tempfile = "3"
