@@ -24,7 +24,7 @@ fn decode_slot_info_image_len() {
     let info = doc
         .as_save_slot_info()
         .unwrap_or_else(|| panic!("slotinfo root={}", cls));
-    assert!(info.small_image_data.len() > 0);
+    assert!(!info.small_image_data.is_empty());
     assert!(info.last_selected_player_slot >= 0);
 }
 
