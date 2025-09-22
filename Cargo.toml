@@ -7,3 +7,10 @@ default-members = ["crates/wle-core", "crates/wle-cli", "crates/wle-gui"]
 version = "0.1.0"
 edition = "2024"
 authors = ["Jari Ravantti"]
+
+[profile.release]
+opt-level = "z"
+lto = "thin"
+codegen-units = 1
+panic = "abort"
+strip = "symbols"
